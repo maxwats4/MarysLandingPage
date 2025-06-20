@@ -352,17 +352,17 @@ body {
   font-weight: 500;
 }
 .about-image {
-  flex: 1 1 40%; /* image container takes 40% max */
-  min-width: 250px;
+  flex: 1 1 40%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  max-width: 100%;
 }
 
 .artist-placeholder {
-  width: 100%;  /* fill container width */
-  max-width: 300px;
+  width: 90%;
+  max-width: 400px;  /* Dynamically limits size on large screens */
   height: auto;
-  position: relative;
 }
 
 .artist-placeholder img {
@@ -370,10 +370,6 @@ body {
   height: auto;
   object-fit: cover;
   border-radius: 20px;
-  display: block;
-  position: relative;
-  top: 0;
-  left: 0;
 }
 
 .artist-placeholder .placeholder-icon {
@@ -897,10 +893,8 @@ body {
     width: 100%;        /* Ensure full width */
   }
 
-.about-text,
-  .about-image {
-    padding: 0;         /* Remove any internal left/right padding */
-    margin: 0 auto;     /* Center align */
+.about-image {
+    flex: 1 1 100%;
   }
   .artist-stats {
     grid-template-columns: 1fr 1fr;
@@ -908,10 +902,10 @@ body {
     margin-top: 1.5rem;
   }
 
-.artist-placeholder {
+ .artist-placeholder {
     width: 100%;
-    max-width: 300px;
-    margin: 0 auto;     /* Center image */
+    max-width: 320px;
+    margin: 0 auto;
   }
   .gallery-filter {
     justify-content: center;
