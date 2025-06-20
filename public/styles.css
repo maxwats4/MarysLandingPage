@@ -294,12 +294,19 @@ body {
 }
 
 .about-content {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 4rem;
+  width: 100vw;                     
+  margin-left: calc(-50vw + 50%);
+  max-width: 100vw;
+  padding: 4rem 6rem;   /* More padding on desktop */
+  box-sizing: border-box;
+  display: flex;
+  gap: 3rem;
   align-items: center;
-  margin-top: 3rem;
 }
+
+
+
+
 
 .about-text p {
   font-size: 1.1rem;
@@ -884,14 +891,18 @@ body {
   }
 
 
-  .about-content {
-    display: block;
-    margin-top: 2rem;
+ .about-content {
+    flex-direction: column;
+    margin-left: 0;      
+    width: 100%;         
+    padding: 1.5rem 2rem;  /* Less padding on mobile */
   }
 
   .about-text {
     margin-bottom: 2rem;
   }
+
+  
 
 .about-image img {
     display: block !important;
@@ -980,5 +991,8 @@ body {
   }
     .nav-link {
     font-size: 0.75rem;       /* Even smaller on really small screens */
+  }
+  .about-content {
+    padding: 1rem 1rem; /* Even smaller padding for small phones */
   }
 }
