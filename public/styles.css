@@ -288,6 +288,8 @@ body {
 }
 
 /* About Section */
+
+
 .about {
   padding: 5rem 0;
   background: #ffffff;
@@ -982,4 +984,6 @@ body {
   .about-content {
     padding: 1rem 1rem;
   }
+
+  
 }
