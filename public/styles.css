@@ -110,13 +110,17 @@ body {
 
 /* Make hero-container span full width and remove fixed max-width */
 .hero-container {
-  width: 100vw;          /* Full viewport width */
-  padding: 2rem 4rem;    /* Some padding on sides */
+  width: 100%;          /* Full viewport width */
+  padding: 2rem 1rem;    /* Some padding on sides */
   box-sizing: border-box;
   display: flex;         /* Flex layout to position children */
   justify-content: center; /* Center horizontally */
   align-items: center;   /* Vertically center items */
+  overflow-x: hidden;
 }
+
+
+
 
 /* Make hero-content take up most of the width but leave some breathing room */
 .hero-content {
