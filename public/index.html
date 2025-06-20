@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Landing Page</title>
+    <title>Mary Watson</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -12,12 +12,12 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>Brand</h2>
+                <h2>Mary Watson</h2>
             </div>
             <div class="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
-                <a href="#services" class="nav-link">Services</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
         </div>
@@ -28,88 +28,174 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    Building the Future,
-                    <span class="gradient-text">One Solution at a Time</span>
+                    Welcome to 
+                    <span class="gradient-text">Mary Watson's</span>
+                    Art Gallery
                 </h1>
                 <p class="hero-description">
-                    We create innovative digital experiences that transform businesses and delight users. 
-                    Our cutting-edge solutions are designed to help you stay ahead in the digital age.
+                    Discover a world of creativity through paintings, drawings, and mixed media artworks. 
+                    Each piece tells a unique story, capturing moments of beauty, emotion, and inspiration 
+                    that connect with the soul.
                 </p>
                 <div class="hero-buttons">
-                    <button class="btn btn-primary">Get Started</button>
-                    <button class="btn btn-secondary">Learn More</button>
+                    <button class="btn btn-primary">View Gallery</button>
+                    <button class="btn btn-secondary">About the Artist</button>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="floating-card card-1">
-                    <div class="card-icon">🚀</div>
-                    <h3>Innovation</h3>
-                    <p>Cutting-edge solutions</p>
+                    <div class="card-icon">🎨</div>
+                    <h3>Paintings</h3>
+                    <p>Oil & Acrylic works</p>
                 </div>
                 <div class="floating-card card-2">
-                    <div class="card-icon">⚡</div>
-                    <h3>Performance</h3>
-                    <p>Lightning fast results</p>
+                    <div class="card-icon">✏️</div>
+                    <h3>Drawings</h3>
+                    <p>Charcoal & Pencil art</p>
                 </div>
                 <div class="floating-card card-3">
-                    <div class="card-icon">🎯</div>
-                    <h3>Precision</h3>
-                    <p>Targeted excellence</p>
+                    <div class="card-icon">🖌️</div>
+                    <h3>Mixed Media</h3>
+                    <p>Creative combinations</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="about" class="features">
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2>Why Choose Us</h2>
-                <p>We deliver exceptional results through innovation and expertise</p>
+                <h2>About Mary Watson</h2>
+                <p>A passionate artist exploring the beauty of life through various mediums</p>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Modern Design</h3>
-                    <p>Beautiful, responsive designs that captivate your audience and drive engagement.</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Mary Watson is a contemporary artist based in Helena, Montana, whose work spans across multiple mediums including oil paintings, watercolors, charcoal drawings, and mixed media installations. With over 15 years of experience, Mary's artistic journey has been one of constant exploration and growth.</p>
+                    
+                    <p>Her work draws inspiration from the natural landscapes of Montana, human emotions, and the interplay between light and shadow. Each piece is carefully crafted to evoke a sense of wonder and connection with the viewer.</p>
+                    
+                    <div class="artist-stats">
+                        <div class="stat">
+                            <h3>150+</h3>
+                            <p>Artworks Created</p>
+                        </div>
+                        <div class="stat">
+                            <h3>25+</h3>
+                            <p>Exhibitions</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⚙️</div>
-                    <h3>Robust Technology</h3>
-                    <p>Built with the latest technologies to ensure scalability and performance.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Secure & Reliable</h3>
-                    <p>Enterprise-grade security and 99.9% uptime guarantee for peace of mind.</p>
+                <div class="about-image">
+                    <div class="artist-placeholder">
+                        <div class="placeholder-icon">👩‍🎨</div>
+                        <p>Mary Watson<br>Artist & Creator</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
         <div class="container">
             <div class="section-header">
-                <h2>Our Services</h2>
-                <p>Comprehensive solutions tailored to your needs</p>
+                <h2>Art Gallery</h2>
+                <p>Explore Mary's diverse collection of artworks across different mediums</p>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Web Development</h3>
-                    <p>Custom websites and web applications built with modern frameworks and best practices.</p>
-                    <div class="service-price">Starting at $2,999</div>
+            
+            <!-- Gallery Filter -->
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="paintings">Paintings</button>
+                <button class="filter-btn" data-filter="drawings">Drawings</button>
+                <button class="filter-btn" data-filter="mixed-media">Mixed Media</button>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="paintings">
+                    <div class="artwork-placeholder">
+                        <div class="placeholder-icon">🖼️</div>
+                        <div class="artwork-info">
+                            <h3>Sunset Over Mountains</h3>
+                            <p>Oil on Canvas • 24" x 36"</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card featured">
-                    <div class="popular-badge">Most Popular</div>
-                    <h3>Full Stack Solutions</h3>
-                    <p>Complete end-to-end development including frontend, backend, and database design.</p>
-                    <div class="service-price">Starting at $4,999</div>
+                
+                <div class="gallery-item" data-category="drawings">
+                    <div class="artwork-placeholder">
+                        <div class="placeholder-icon">✏️</div>
+                        <div class="artwork-info">
+                            <h3>Portrait Study</h3>
+                            <p>Charcoal on Paper • 18" x 24"</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <h3>Consulting</h3>
-                    <p>Strategic guidance and technical consultation to optimize your digital presence.</p>
-                    <div class="service-price">Starting at $199/hr</div>
+                
+                <div class="gallery-item" data-category="paintings">
+                    <div class="artwork-placeholder">
+                        <div class="placeholder-icon">🎨</div>
+                        <div class="artwork-info">
+                            <h3>Wildflower Field</h3>
+                            <p>Acrylic on Canvas • 20" x 30"</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="mixed-media">
+                    <div class="artwork-placeholder">
+                        <div class="placeholder-icon">🖌️</div>
+                        <div class="artwork-info">
+                            <h3>Abstract Emotions</h3>
+                            <p>Mixed Media • 16" x 20"</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="drawings">
+                    <div class="artwork-placeholder">
+                        <div class="placeholder-icon">📝</div>
+                        <div class="artwork-info">
+                            <h3>City Sketches</h3>
+                            <p>Pencil on Paper • 12" x 16"</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="paintings">
+                    <div class="artwork-placeholder">
+                        <div class="placeholder-icon">🌅</div>
+                        <div class="artwork-info">
+                            <h3>Morning Light</h3>
+                            <p>Watercolor • 14" x 18"</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="mixed-media">
+                    <div class="artwork-placeholder">
+                        <div class="placeholder-icon">🎭</div>
+                        <div class="artwork-info">
+                            <h3>Textured Dreams</h3>
+                            <p>Mixed Media • 22" x 28"</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="paintings">
+                    <div class="artwork-placeholder">
+                        <div class="placeholder-icon">🌸</div>
+                        <div class="artwork-info">
+                            <h3>Spring Blossoms</h3>
+                            <p>Oil on Canvas • 16" x 24"</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,20 +206,24 @@
         <div class="container">
             <div class="contact-content">
                 <div class="contact-info">
-                    <h2>Ready to Start Your Project?</h2>
-                    <p>Let's discuss how we can help transform your ideas into reality. Get in touch today for a free consultation.</p>
+                    <h2>Get in Touch</h2>
+                    <p>Interested in commissioning a piece or learning more about my work? I'd love to hear from you. Let's discuss how we can bring your vision to life through art.</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <span class="contact-icon">📧</span>
-                            <span>hello@example.com</span>
+                            <span>mary.watson.art@gmail.com</span>
                         </div>
                         <div class="contact-item">
                             <span class="contact-icon">📱</span>
-                            <span>+1 (555) 123-4567</span>
+                            <span>+1 (406) 555-0123</span>
                         </div>
                         <div class="contact-item">
                             <span class="contact-icon">📍</span>
-                            <span>San Francisco, CA</span>
+                            <span>Helena, Montana</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🎨</span>
+                            <span>Available for Commissions</span>
                         </div>
                     </div>
                 </div>
@@ -161,18 +251,18 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h3>Brand</h3>
-                    <p>Building the future, one solution at a time.</p>
+                    <h3>Mary Watson</h3>
+                    <p>Creating art that speaks to the soul.</p>
                 </div>
                 <div class="footer-links">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
-                    <a href="#services">Services</a>
+                    <a href="#gallery">Gallery</a>
                     <a href="#contact">Contact</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Brand. All rights reserved.</p>
+                <p>&copy; 2024 Mary Watson Art. All rights reserved.</p>
             </div>
         </div>
     </footer>
