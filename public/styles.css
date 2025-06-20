@@ -804,8 +804,11 @@ body {
 }
 
 @media (max-width: 768px) {
-  .nav-menu {
-    display: none;
+   .nav-menu {
+    display: flex;         /* Changed from 'none' to 'flex' to show menu */
+    flex-wrap: wrap;      /* Allow nav items to wrap on smaller screens */
+    justify-content: center; /* Center the nav items */
+    gap: 1rem;            /* Add some spacing between nav links */
   }
 
   .hero-container {
@@ -862,6 +865,7 @@ body {
   .floating-card:hover {
     transform: none !important;
   }
+
 
   .about-content {
     display: block;
