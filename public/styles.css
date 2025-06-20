@@ -689,13 +689,22 @@ body {
   gap: 1rem;
 }
 
-.contact-item {
+.contact-item a.contact-link {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  font-size: 1rem;
-  color: #4a5568;
+  gap: 0.5rem;
+  color: inherit;          /* normal color */
+  text-decoration: none;   /* no underline */
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
+
+.contact-item a.contact-link:hover {
+  color: #4a90e2;          /* example highlight color, change as needed */
+  text-decoration: none;
+}
+
+
 
 .contact-icon {
   font-size: 1.2rem;
