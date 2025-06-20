@@ -1,3 +1,6 @@
+
+
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -125,3 +128,39 @@ window.addEventListener('load', () => {
         // typeWriter(heroTitle, originalText.replace(/<[^>]*>/g, ''), 50);
     }
 });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contact-form');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const params = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      subject: document.getElementById('subject').value,
+      message: document.getElementById('message').value,
+    };
+
+    const submitBtn = form.querySelector('.btn-primary');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+
+    emailjs.send('service_jzls4y8', 'template_7zhfntf', params)
+      .then(() => {
+        alert('✅ Message sent!');
+        form.reset();
+      })
+      .catch((error) => {
+        alert('❌ Failed to send message: ' + (error?.text || error.message));
+      })
+      .finally(() => {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      });
+  });
+});
+

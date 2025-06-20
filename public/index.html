@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -117,8 +117,7 @@
     <section id="gallery" class="gallery">
         <div class="container">
             <div class="section-header">
-                <h2>Art Gallery</h2>
-                <p>Explore Mary's diverse collection of artworks across different mediums</p>
+                <h2>Book Covers</h2>
             </div>
             
             <!-- Gallery Filter
@@ -267,19 +266,21 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required />
-                            <input type="email" placeholder="Your Email" required />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Subject" required />
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
-                        </div>
+                   
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required />
+                        <input type="email" id="email" placeholder="Your Email" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required />
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                </form>
+
                 </div>
             </div>
         </div>
@@ -306,6 +307,18 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+<!-- ✅ EmailJS loaded and initialized first -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    emailjs.init({ publicKey: "VhNRlGOmLA4vZgt4Q" });
+  });
+</script>
+
+<!-- ✅ Your script comes after -->
+<script src="script.js"></script>
+
+
+   
 </body>
 </html>
