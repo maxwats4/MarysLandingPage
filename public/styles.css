@@ -805,12 +805,16 @@ body {
 
 @media (max-width: 768px) {
    .nav-menu {
-    display: flex;         /* Changed from 'none' to 'flex' to show menu */
-    flex-wrap: wrap;      /* Allow nav items to wrap on smaller screens */
-    justify-content: center; /* Center the nav items */
-    gap: 1rem;            /* Add some spacing between nav links */
+    display: flex;
+    flex-wrap: nowrap;        /* Prevent wrapping */
+    overflow-x: auto;         /* Allow horizontal scroll if needed */
+    gap: 0.5rem;              /* Reduced gap to save space */
   }
 
+  .nav-link {
+    font-size: 0.85rem;       /* Smaller font to fit menu in one line */
+    white-space: nowrap;      /* Prevent text wrapping inside nav links */
+  }
   .hero-container {
     flex-direction: column;
     padding: 2rem 1.5rem;
@@ -952,5 +956,8 @@ body {
   .form-group textarea {
     padding: 0.75rem;
     font-size: 0.9rem;
+  }
+    .nav-link {
+    font-size: 0.75rem;       /* Even smaller on really small screens */
   }
 }
