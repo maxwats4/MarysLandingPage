@@ -130,15 +130,13 @@ body {
   text-align: center;    /* Center text horizontally */
 }
 
-.hero-title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-  color: #2d3748;
-
-  /* Apply Pinyon Script font */
-  font-family: 'Pinyon Script', cursive;
+.hero-title img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;  /* smaller max width */
+  height: auto;
+  border-radius: 12px;
 }
 
 .gradient-text {
@@ -893,6 +891,8 @@ body {
     width: 100%;        /* Ensure full width */
   }
 
+
+  
 .about-image {
     flex: 1 1 100%;
   }
