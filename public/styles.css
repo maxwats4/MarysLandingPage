@@ -312,6 +312,7 @@ body {
 }
 
 
+
 .about-text p {
   font-size: 1.1rem;
   line-height: 1.8;
@@ -348,7 +349,6 @@ body {
   color: #4a5568;
   font-weight: 500;
 }
-
 .about-image {
   flex: 1 1 40%; /* image container takes 40% max */
   min-width: 250px;
@@ -358,18 +358,8 @@ body {
 
 .artist-placeholder {
   width: 100%;  /* fill container width */
- max-width: 300px;
- height: auto;
-  background: linear-gradient(135deg, #f8fbff 0%, #ffffff 100%);
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border: 2px solid #e6f3ff;
-  box-shadow: 0 10px 30px rgba(141, 173, 191, 0.1);
-  overflow: hidden;
+  max-width: 300px;
+  height: auto;
   position: relative;
 }
 
@@ -898,7 +888,7 @@ body {
   }
 
 
-  .about-content {
+   .about-content {
     flex-direction: column;
     margin-left: 0;
     width: 100%;
@@ -906,7 +896,7 @@ body {
     align-items: center;  /* center children vertically */
   }
 
- .about-text {
+.about-text {
     flex: none;
     width: 100%;
     margin-bottom: 2rem;
@@ -914,7 +904,7 @@ body {
 
   
 
- .about-image {
+.about-image {
     flex: none;
     width: 100%;
     max-width: 350px; /* reasonable max width for image on mobile */
@@ -925,11 +915,10 @@ body {
     margin-top: 1.5rem;
   }
 
-  .artist-placeholder {
+ .artist-placeholder {
     max-width: 100%;
     height: auto;
   }
-
   .gallery-filter {
     justify-content: center;
   }
