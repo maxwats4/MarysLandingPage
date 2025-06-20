@@ -47,6 +47,9 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+
+  /* Apply Pinyon Script font */
+  font-family: 'Pinyon Script', cursive;
 }
 
 .nav-menu {
@@ -124,6 +127,9 @@ body {
   line-height: 1.2;
   margin-bottom: 1.5rem;
   color: #2d3748;
+
+  /* Apply Pinyon Script font */
+  font-family: 'Pinyon Script', cursive;
 }
 
 .gradient-text {
@@ -231,6 +237,9 @@ body {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   color: #2d3748;
+
+  /* Apply Pinyon Script font */
+  font-family: 'Pinyon Script', cursive;
 }
 
 .floating-card p {
@@ -279,6 +288,9 @@ body {
   font-weight: 700;
   color: #8dadbf;
   margin-bottom: 0.5rem;
+
+  /* Apply Pinyon Script font */
+  font-family: 'Pinyon Script', cursive;
 }
 
 .stat p {
@@ -315,6 +327,7 @@ body {
   color: #8dadbf;
   line-height: 1.4;
 }
+
 /* Gallery Section */
 .gallery {
   padding: 5rem 0;
@@ -395,6 +408,9 @@ body {
   font-weight: 600;
   color: #2d3748;
   margin-bottom: 0.5rem;
+
+  /* Apply Pinyon Script font */
+  font-family: 'Pinyon Script', cursive;
 }
 
 .artwork-info p {
@@ -413,6 +429,9 @@ body {
   font-weight: 700;
   color: #2d3748;
   margin-bottom: 1rem;
+
+  /* Apply Pinyon Script font */
+  font-family: 'Pinyon Script', cursive;
 }
 
 .section-header p {
@@ -454,6 +473,9 @@ body {
   font-weight: 600;
   color: #2d3748;
   margin-bottom: 1rem;
+
+  /* Apply Pinyon Script font */
+  font-family: 'Pinyon Script', cursive;
 }
 
 .feature-card p {
@@ -516,6 +538,9 @@ body {
   font-weight: 600;
   margin-bottom: 1rem;
   color: #2d3748;
+
+  /* Apply Pinyon Script font */
+  font-family: 'Pinyon Script', cursive;
 }
 
 .service-card.featured h3 {
@@ -560,6 +585,9 @@ body {
   font-weight: 700;
   color: #2d3748;
   margin-bottom: 1rem;
+
+  /* Apply Pinyon Script font */
+  font-family: 'Pinyon Script', cursive;
 }
 
 .contact-info p {
@@ -639,6 +667,9 @@ body {
 .footer-brand h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+
+  /* Apply Pinyon Script font */
+  font-family: 'Pinyon Script', cursive;
 }
 
 .footer-brand p {
