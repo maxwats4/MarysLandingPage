@@ -893,6 +893,14 @@ body {
     margin-bottom: 2rem;
   }
 
+.about-image img {
+    display: block !important;
+    max-width: 100% !important;
+    height: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
   .artist-stats {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
